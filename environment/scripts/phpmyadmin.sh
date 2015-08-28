@@ -8,7 +8,7 @@ cp -f /vagrant/environment/config/phpMyAdmin.conf /etc/httpd/conf.d/phpMyAdmin.c
 cp -f /vagrant/environment/config/phpMyAdmin.config.inc.php /etc/phpMyAdmin/config.inc.php
 
 # it's created with permissions that don't work...
-chmod -R ugo+rx /etc/phpMyAdmin/config.inc.php
+chmod -R ugo+rx /etc/phpMyAdmin
 
 echo "Restarting Apache"
 /sbin/service httpd restart
