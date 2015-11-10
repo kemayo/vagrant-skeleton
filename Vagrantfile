@@ -23,7 +23,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, :path => "environment/scripts/php.sh"
   config.vm.provision :shell, :path => "environment/scripts/apache.sh"
   config.vm.provision :shell, :path => "environment/scripts/mysql.sh"
-  config.vm.provision :shell, :path => "environment/scripts/custom-yum-epel-repo.sh" # needed for phpmyadmin
-  config.vm.provision :shell, :path => "environment/scripts/phpmyadmin.sh" # needed for phpmyadmin
+  config.vm.provision :shell, :path => "environment/scripts/adminer.sh"
   config.vm.provision :shell, :path => "environment/scripts/always.sh", run: "always"
 end
