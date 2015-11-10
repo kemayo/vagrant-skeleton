@@ -7,7 +7,7 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "chef/centos-6.5"
+  config.vm.box = "puphpet/centos65-x64"
 
   # Port forward 80 to 8080
   config.vm.network :forwarded_port, guest: 80, host: 8081, auto_correct: true
